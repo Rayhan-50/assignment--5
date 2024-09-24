@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+   <header class="bg-red-300 py-5 mb-7 sticky top-0 z-50">
+    <nav class="flex lg:w-3/4 justify-between mx-auto ">
+        <button class="btn bg-lime-500 text-xl font-semibold" id="header">Accent</button>
+        <div class="flex justify-center items-center gap-3">
+           <img src="../B10A5-DOM-Quest-Build-and-Manipulate/assets/logo.png" alt="">
+           <h1 class="text-xl font-semibold">Donate Bangladesh</h1> 
+        </div>
+        <div class="flex justify-center items-center gap-3">
+            <img src="../B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+            <h1 class="text-xl font-semibold"><span id="allTotal">5500</span> BDT</h1>
+        </div>
+    </nav>
+   </header> 
+   <main>
+    <div class="text-center space-x-4 my-10">
+        <button class="p-3 rounded-xl shadow bg-lime-500 text-xl font-semibold" id="donationBtn">Donation</button>
+        <button class="p-3 rounded-xl shadow text-xl font-light" id="historyBtn">History</button>  
+    </div>
+   
+    <!-- card -->
+   <div class="space-y-5 lg:w-5/6 mx-auto" id="card">
+    <!-- card 1 -->
+    <div class="card card-side bg-base-100 shadow-xl p-5">
+        
+        <img class=""
+          src="./assets/noakhali.png"
+          alt="Movie" />
+      
+      <div class="card-body">
+      
+              <div class="text-sm flex gap-2  items-center">
+                  <img src="./assets/coin.png" alt="">
+                  <p><span id="balance1">600</span> BDT</p>
+              </div>
+              <h1 class="text-xl font-semibold">Donate for Flood Relief in Feni,Bangladesh</h1>
+              <p class="font-light ">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+              <input type="text" placeholder="Write Donation Amount" class="input-bordered input-primary w-full  border border-dashed" id="donationInput1">
+              <button class="p-2 mt-2 rounded-xl shadow bg-lime-500 text-xl font-semibold" id="donationButton1" >Donation</button>
+             
+      </div>
+      </div>
+
+    <!-- card2 -->
+    <div class="card card-side bg-base-100 shadow-xl p-5">
+        
+        <img class=""
+          src="./assets/noakhali.png"
+          alt="Movie" />
+      
+      <div class="card-body">
+      
+              <div class="text-sm flex gap-2  items-center">
+                  <img src="./assets/coin.png" alt="">
+                  <p><span id="balance2">600</span> BDT</p>
+              </div>
+              <h1 class="text-xl font-semibold">Donate for Flood Relief in Feni,Bangladesh</h1>
+              <p class="font-light ">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+              <input type="text" placeholder="Write Donation Amount" class="input-bordered input-primary w-full  border border-dashed" id="donationInput2">
+              <button class="p-2 mt-2 rounded-xl shadow bg-lime-500 text-xl font-semibold" id="donationButton2">Donation</button>
+      </div>
+      </div>
+      <!-- card3 -->
+      <div class="card card-side bg-base-100 shadow-xl p-5">
+        
+        <img class=""
+          src="./assets/noakhali.png"
+          alt="Movie" />
+      
+      <div class="card-body">
+      
+             <div>
+                <div class="text-sm flex gap-2  items-center w-32 bg-zinc-500 p-2 rounded shadow text-white">
+                    <img src="./assets/coin.png" alt="">
+                    <p><span id="balance3">600</span> BDT</p>
+                </div>
+             </div>
+              <h1 class="text-xl font-semibold">Donate for Flood Relief in Feni,Bangladesh</h1>
+              <p class="font-light ">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+              <input type="text" placeholder="Write Donation Amount" class="input-bordered input-primary w-full  border border-dashed" id="donationInput3">
+              <button class="p-2 mt-2 rounded-xl shadow bg-lime-500 text-xl font-semibold" id="donationButton3" >Donation</button>
+      </div>
+      </div>
+      <!-- close -->
+   </div>
+     
+<div class="hidden" id="history-list">
+
+</div>
+   </main>
+   <script src="./js/script.js"></script>
+</body>
+</html>
